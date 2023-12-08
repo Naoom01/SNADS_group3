@@ -1,5 +1,5 @@
-artist <- readr::read_csv("C:/Users/20184113/Desktop/JADS/Year 2/SNADS/Nodelist_Final3_adjusted.csv")
-collabs <- readr::read_csv("C:/Users/20184113/Desktop/JADS/Year 2/SNADS/Edgelist_Final3.csv")
+artist <- readr::read_csv("Nodelist_Final3_adjusted.csv")
+collabs <- readr::read_csv("Edgelist_Final3.csv")
 
 g_dj <- igraph::graph_from_data_frame(collabs, artist, directed = FALSE)
 net_dj <- snafun::to_network(g_dj)
